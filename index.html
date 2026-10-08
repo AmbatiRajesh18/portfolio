@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A. Rajesh | Student Portfolio</title>
+  <meta name="description" content="Portfolio of A. Rajesh — a student with a strong academic record, a logical mind and a passion for learning technology.">
+  <meta name="author" content="A. Rajesh">
+  <meta name="theme-color" content="#0b0d17">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="brand-mark">AR</span><span class="brand-name">A. Rajesh</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme"><i class="bi bi-sun-fill"></i></button>
+        <a href="#contact" class="btn btn-small">Connect</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="pill"><span class="dot"></span> Open to learning &amp; opportunities</span>
+          <h1>Hi, I'm <span class="gradient-text">A. Rajesh</span></h1>
+          <p class="typed-line">I'm <span id="typed" aria-live="polite"></span><span class="cursor">|</span></p>
+          <p class="lead">A motivated student building a strong foundation in technology through consistent learning, logical thinking and practical problem solving.</p>
+          <div class="hero-cta">
+            <a href="#education" class="btn">View My Journey <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="socials">
+            <a href="mailto:rajeshambati187@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="tel:8688008473" aria-label="Phone"><i class="bi bi-telephone-fill"></i></a>
+            <span class="loc"><i class="bi bi-geo-alt-fill"></i> Andhra Pradesh, India</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.15s">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar">AR</div>
+            <div class="float-card fc-1"><i class="bi bi-trophy-fill"></i><div><strong>978 / 1000</strong><span>Intermediate</span></div></div>
+            <div class="float-card fc-2"><i class="bi bi-graph-up-arrow"></i><div><strong>9.22 CGPA</strong><span>1st Semester</span></div></div>
+            <div class="float-card fc-3"><i class="bi bi-grid-3x3-gap-fill"></i><div><strong>Chess</strong><span>Strategic thinker</span></div></div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong><span class="count" data-to="587">0</span><small>/600</small></strong><span>10th Class</span></div>
+        <div class="stat reveal" style="--d:.08s"><strong><span class="count" data-to="978">0</span><small>/1000</small></strong><span>Intermediate</span></div>
+        <div class="stat reveal" style="--d:.16s"><strong><span class="count" data-to="9.22" data-decimals="2">0</span></strong><span>1st Sem CGPA</span></div>
+        <div class="stat reveal" style="--d:.24s"><strong><span class="count" data-to="8.95" data-decimals="2">0</span></strong><span>2nd Sem CGPA</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">01 — About</span>
+          <h2>Curious mind. Consistent learner.</h2>
+          <p>A motivated student focused on learning, building useful skills, and preparing for future professional opportunities.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-text reveal">
+            <p>I am <strong>A. Rajesh</strong>, a student who enjoys learning new concepts, solving problems, and improving through practice. My focus is on developing strong technical and professional foundations that I can apply in real-world projects.</p>
+            <p>I value teamwork, clear communication, logical thinking, and the discipline to keep learning. I'm looking forward to turning my academic knowledge into practical experience.</p>
+            <div class="chips">
+              <span class="chip">Problem Solving</span><span class="chip">Quick Learner</span>
+              <span class="chip">Team Player</span><span class="chip">Chess</span><span class="chip">Reading</span>
+            </div>
+          </div>
+
+          <div class="card info-card reveal" style="--d:.1s">
+            <h3>Quick Facts</h3>
+            <ul class="info-list">
+              <li><i class="bi bi-person-fill"></i><span>Name</span><strong>A. Rajesh</strong></li>
+              <li><i class="bi bi-cake2-fill"></i><span>Birthday</span><strong>15 May 2008</strong></li>
+              <li><i class="bi bi-geo-alt-fill"></i><span>Location</span><strong>Andhra Pradesh, India</strong></li>
+              <li><i class="bi bi-envelope-fill"></i><span>Email</span><strong><a href="mailto:rajeshambati187@gmail.com">rajeshambati187@gmail.com</a></strong></li>
+              <li><i class="bi bi-telephone-fill"></i><span>Phone</span><strong><a href="tel:8688008473">8688008473</a></strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">02 — Education</span>
+          <h2>Academic Journey</h2>
+          <p>A strong academic record with a focus on consistent performance and continued improvement.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="t-item reveal">
+            <div class="t-dot"><i class="bi bi-book-fill"></i></div>
+            <div class="card t-card">
+              <span class="t-tag">Secondary School</span>
+              <h3>10th Class</h3>
+              <p>Built a strong foundation and academic discipline.</p>
+              <div class="meter"><div class="meter-fill" data-fill="97.8"></div></div>
+              <div class="t-score"><strong>587</strong> / 600 <em>97.8%</em></div>
+            </div>
+          </article>
+
+          <article class="t-item reveal">
+            <div class="t-dot"><i class="bi bi-journal-bookmark-fill"></i></div>
+            <div class="card t-card featured">
+              <span class="t-tag">Intermediate</span>
+              <h3>Higher Secondary</h3>
+              <p>Excellent result that reflects consistency and dedication.</p>
+              <div class="meter"><div class="meter-fill" data-fill="97.8"></div></div>
+              <div class="t-score"><strong>978</strong> / 1000 <em>97.8%</em></div>
+            </div>
+          </article>
+
+          <article class="t-item reveal">
+            <div class="t-dot"><i class="bi bi-mortarboard-fill"></i></div>
+            <div class="card t-card">
+              <span class="t-tag">Higher Education</span>
+              <h3>1st Semester</h3>
+              <p>A strong start to higher education.</p>
+              <div class="meter"><div class="meter-fill" data-fill="92.2"></div></div>
+              <div class="t-score"><strong>9.22</strong> CGPA</div>
+            </div>
+          </article>
+
+          <article class="t-item reveal">
+            <div class="t-dot"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <div class="card t-card">
+              <span class="t-tag">Higher Education</span>
+              <h3>2nd Semester</h3>
+              <p>Maintaining solid, steady academic performance.</p>
+              <div class="meter"><div class="meter-fill" data-fill="89.5"></div></div>
+              <div class="t-score"><strong>8.95</strong> CGPA</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">03 — Skills</span>
+          <h2>What I Bring</h2>
+          <p>Core skills I'm developing through academics, practice, and everyday learning.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card skill reveal"><div class="s-icon"><i class="bi bi-pc-display"></i></div><h3>Computer Skills</h3><p>Comfortable with essential computer tools and digital workflows.</p></div>
+          <div class="card skill reveal" style="--d:.07s"><div class="s-icon"><i class="bi bi-puzzle-fill"></i></div><h3>Problem Solving</h3><p>Breaking challenges into logical, manageable steps.</p></div>
+          <div class="card skill reveal" style="--d:.14s"><div class="s-icon"><i class="bi bi-chat-dots-fill"></i></div><h3>Communication</h3><p>Clear, respectful and effective in how I express ideas.</p></div>
+          <div class="card skill reveal"><div class="s-icon"><i class="bi bi-people-fill"></i></div><h3>Teamwork</h3><p>Ready to collaborate, listen, contribute and learn from others.</p></div>
+          <div class="card skill reveal" style="--d:.07s"><div class="s-icon"><i class="bi bi-lightning-charge-fill"></i></div><h3>Quick Learning</h3><p>Adapting fast and enjoying every new concept.</p></div>
+          <div class="card skill reveal" style="--d:.14s"><div class="s-icon"><i class="bi bi-diagram-3-fill"></i></div><h3>Logical Thinking</h3><p>Structured thinking to understand concepts and find solutions.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section alt" id="interests">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">04 — Interests</span>
+          <h2>Beyond the Classroom</h2>
+          <p>Hobbies that build focus, curiosity and continuous learning.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card interest reveal"><span class="big-num">01</span><i class="bi bi-grid-3x3-gap-fill"></i><h3>Chess</h3><p>Sharpens strategic thinking, concentration, patience and decision-making.</p></article>
+          <article class="card interest reveal" style="--d:.1s"><span class="big-num">02</span><i class="bi bi-book-half"></i><h3>Reading</h3><p>Opens new ideas, grows knowledge and keeps a curious mindset.</p></article>
+          <article class="card interest accent reveal" style="--d:.2s"><span class="big-num">03</span><i class="bi bi-rocket-takeoff-fill"></i><h3>Future Focus</h3><p>Turning learning into practical skills and meaningful opportunities.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">05 — Contact</span>
+          <h2>Let's Connect</h2>
+          <p>For academic opportunities, projects, internships or a friendly conversation — reach out.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="reveal contact-info">
+            <a class="contact-link" href="mailto:rajeshambati187@gmail.com"><i class="bi bi-envelope-fill"></i><div><span>Email</span><strong>rajeshambati187@gmail.com</strong></div></a>
+            <a class="contact-link" href="tel:8688008473"><i class="bi bi-telephone-fill"></i><div><span>Phone</span><strong>8688008473</strong></div></a>
+            <div class="contact-link"><i class="bi bi-geo-alt-fill"></i><div><span>Location</span><strong>Andhra Pradesh, India</strong></div></div>
+          </div>
+
+          <form class="card contact-form reveal" id="contactForm" style="--d:.1s" novalidate>
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Doe" required></div>
+            <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="jane@example.com" required></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Hello Rajesh…" required></textarea></div>
+            <button type="submit" class="btn btn-block">Send Message <i class="bi bi-send-fill"></i></button>
+            <p class="form-note" id="formNote">This opens your email app with the message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <strong>A. Rajesh</strong> · Student Portfolio</p>
+      <p class="muted">Built with curiosity, consistency &amp; a passion for learning.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
